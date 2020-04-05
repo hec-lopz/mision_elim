@@ -1,0 +1,97 @@
+:root {
+  --font1: "Leelawadee UI", sans-serif;
+  --header-shadow: linear-gradient(
+    180deg,
+    rgb(242, 240, 235) 0%,
+    rgba(15, 15, 15, 0.71) 50%,
+    rgba(84, 84, 84, 0.26) 100%
+  );
+  --header-text-color: #f2f0eb;
+  --header-hover: #e9d293;
+  --bg-color: #f2f0eb;
+  --black-color: #707070;
+  --box-shadow: 12px 9px 50px 0px rgba(0, 0, 0, 0.27);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Leelawadee UI", sans-serif;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#nav-bar {
+  background: var(--header-shadow) !important;
+}
+#nav-bar img {
+  width: 150px;
+  min-width: 50px;
+}
+#nav-bar a {
+  color: var(--header-text-color) !important;
+}
+#nav-bar a:hover {
+  color: var(--header-hover) !important;
+}
+#hero {
+  max-width: 1366px;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  /* object-fit: cover; */
+}
+#hero-bg {
+  width: 100%;
+  min-width: 768px;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.section-title {
+  height: 115px;
+}
+.section-title h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2.5rem;
+  /* overflow: visible; */
+}
+.section-title div {
+  min-height: 100%;
+}
+#carouselExampleIndicators {
+  max-width: 1366px;
+}
+#fb-separator {
+  height: 146px;
+}
+#fb-pg p {
+  text-align: center;
+  font-size: 30px;
+  max-width: 400px;
+  /* line-height: -100 */
+  vertical-align: center;
+}
+#fb-container {
+  text-align: center;
+}
+.paragraph {
+  font-size: 30px;
+  text-align: center;
+  font-size: 30px;
+  vertical-align: center;
+}
+.shadow {
+  -webkit-box-shadow: 12px 9px 50px 0px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 12px 9px 50px 0px rgba(0, 0, 0, 0.27);
+  box-shadow: 12px 9px 50px 0px rgba(0, 0, 0, 0.27);
+}
+#form-container {
+  width: 450;
+  height: 576;
+}
