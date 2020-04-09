@@ -15,21 +15,25 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Hello, world!</title>
+    <title>Misión Elim - ¡Somos una gran familia!</title>
   </head>
 
   <body>
     <!-- Header -->
-    <div id="hero" class="container">
+    <div id="hero" class="container-fluid">
       <header id="header">
         <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#"
             ><img
               id="logo"
-              src="images/logo_mision_elim.svg"
+              class="img-fluid"
+              src="images/logo.png"
               alt="Logo de Iglesia"
           /></a>
           <button
@@ -56,20 +60,34 @@
           </div>
         </nav>
       </header>
-      <img id="hero-bg" src="images/header.jpg" alt="Foto de la iglesia" />
+      <img
+        id="hero-bg"
+        class="img-fluid"
+        src="images/Imagen cabecera.png"
+        alt="Foto de la iglesia"
+      />
     </div>
     <!-- /Header -->
     <main>
       <!-- Eventos -->
-      <div id="eventos" class="container section-title">
-        <div class="row no-gutters justify-content-center">
-          <h1 class="col-5 col-sm-3 align-self-center">Eventos</h1>
+      <div id="eventos" class="px-0 container-fluid">
+        <div id="lema" class="">
+          <img
+            class="img-fluid"
+            src="images/Imagen lema.png"
+            alt="Somos una gran familia"
+          />
+          <div class="d-flex justify-content-center overlay">
+            <h1 class="d-inline-flex align-items-center lema__text display-1">
+              somos una gran familia
+            </h1>
+          </div>
         </div>
       </div>
       <div
         id="carouselExampleIndicators"
         class="carousel shadow slide mr-auto ml-auto"
-        data-ride="carousel"
+        data-ride="carousel "
       >
         <ol class="carousel-indicators">
           <li
@@ -110,61 +128,46 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div id="fb-pg" class="container">
-        <div id="fb-separator" class="row justify-content-center">
-          <p class="col align-self-center">
-            Encuentra más en nuestra página de Facebook
+      <!-- /Eventos -->
+      <!-- Donativos -->
+      <div
+        id="donativos-container"
+        class="container-fluid d-flex justify-content-center flex-column py-5"
+      >
+        <div class="section-title row no-gutters justify-content-center">
+          <h1 class="col-7 col-sm-4 d-flex justify-content-center">
+            Donativos
+          </h1>
+        </div>
+        <div class="container justify-content-center">
+          <p
+            class="row mr-auto ml-auto paragraph d-flex justify-content-center"
+          >
+            Número de cuenta: xxxxxxxxxxxxxxxxx<br />
+            Clave interbancaria: xxxxxxxxxxxxxxxxx<br />Banco: xxxxxxxxxxxx
           </p>
         </div>
       </div>
-      <div id="fb-container" class="container">
-        <div
-          class="fb-page row shadow"
-          data-href="https://www.facebook.com/MisionElim/?epa=SEARCH_BOX"
-          data-tabs="timeline"
-          data-width="500"
-          data-height="780"
-          data-small-header="false"
-          data-adapt-container-width="true"
-          data-hide-cover="false"
-          data-show-facepile="true"
-        >
-          <blockquote
-            cite="https://www.facebook.com/MisionElim/?epa=SEARCH_BOX"
-            class="fb-xfbml-parse-ignore"
-          >
-            <a href="https://www.facebook.com/MisionElim/?epa=SEARCH_BOX"
-              >Iglesia Cristiana Independiente Pentecostes Mision Elim</a
-            >
-          </blockquote>
-        </div>
-      </div>
-      <!-- /Eventos -->
-      <!-- Donativos -->
-      <div id="donativos" class="container section-title">
-        <div class="row no-gutters justify-content-center">
-          <h1 class="col-7 col-sm-4 align-self-center">Donativos</h1>
-        </div>
-      </div>
-      <div class="container">
-        <p class="row align-self-center paragraph">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quos
-          quasi ipsa, incidunt odit suscipit hic temporibus, cumque deserunt,
-          sit a velit molestiae harum accusantium pariatur non quibusdam odio
-          neque?
-        </p>
-      </div>
       <!-- /Donativos -->
       <!-- Ubicacion -->
-      <div id="ubicacion" class="container section-title">
-        <div class="row no-gutters justify-content-center">
-          <h1 class="col-6 col-sm-4 align-self-center">Ubicación</h1>
+      <div
+        id="ubicacion"
+        class="container d-flex flex-column justify-content-center my-5"
+      >
+        <div class="section-title row d-flex justify-content-center">
+          <h1
+            class="section-title d-flex justify-content-center align-items-center"
+          >
+            Ubicación
+          </h1>
         </div>
-      </div>
-      <div class="container">
-        <div class="row align-self-center">
+        <p class="row paragraph">
+          Av. Adolfo Lugo Verduzco s/n Col. Javier Rojo Gomez Huichapan
+          Teléfono: 7617821002
+        </p>
+        <div class="container-fluid d-flex justify-content-center">
           <iframe
-            class="col shadow"
+            class="shadow"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224.2277237488793!2d-99.65238485507528!3d20.354411439557268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3bd359f02234b%3A0x29300e042b48fe49!2sIglesia%20Cristiana%20Independiente%20Pentecost%C3%A9s%20Misi%C3%B3n%20Elim!5e0!3m2!1sen!2smx!4v1586079450568!5m2!1sen!2smx"
             width="600"
             height="450"
@@ -178,65 +181,71 @@
       </div>
       <!-- /Ubicacion -->
       <!-- Contacto -->
-      <div id="contacto" class="container section-title">
-        <div class="row no-gutters justify-content-center">
+      <div
+        id="contacto"
+        class="container-fluid d-flex align-items-center flex-column pb-5"
+      >
+        <div class="row no-gutters justify-content-center section-title">
           <h1 class="col-6 col-sm-4 align-self-center">Contacto</h1>
         </div>
-      </div>
-      <div id="form-container" class="container">
-        <form id="form-container">
-          <div class="form-group">
-            <label for="formGroupExampleInput">Nombre</label>
-            <input
-              type="text"
-              class="form-control"
-              id="formGroupExampleInput"
-              placeholder=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Correo</label>
-            <input
-              type="text"
-              class="form-control"
-              id="formGroupExampleInput2"
-              placeholder=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Teléfono</label>
-            <input
-              type="text"
-              class="form-control"
-              id="formGroupExampleInput2"
-              placeholder=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Mensaje</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="5"
-            ></textarea>
-          </div>
-        </form>
+        <div
+          id="form-container"
+          class="container d-flex justify-content-center"
+        >
+          <form id="form-container">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Correo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Teléfono</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
       <!-- /Contacto -->
     </main>
     <!-- Footer -->
-    <footer>
-      <i id="fb_logo"></i>
+    <footer
+      class="container-fluid d-flex align-items-center justify-content-center"
+    >
+      <a href="http://www.facebook.com" target="blank">
+        <i id="fb_logo" class="icon-facebook2"> </i>
+      </a>
+      <span>Todos los derechos reservados (C) 2020</span>
     </footer>
     <!-- /Footer -->
     <!-- Optional JavaScript -->
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"
-    ></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
