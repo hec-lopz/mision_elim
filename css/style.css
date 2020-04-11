@@ -89,16 +89,17 @@ h1 {
   /* max-width: 1366px; */
   position: relative;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
   overflow: hidden;
   /* object-fit: cover; */
 }
 #hero-bg {
   text-align: center;
   width: 100%;
-  min-width: 768px;
+  height: 100%;
+  min-width: 580px;
   object-fit: cover;
-  object-position: top left;
+  /* object-position: top left; */
 }
 
 .section-title {
