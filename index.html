@@ -58,9 +58,7 @@
                 >Inicio <span class="sr-only">(current)</span></a
               > -->
               <a class="nav-item nav-link" href="#eventos">Eventos</a>
-              <a class="nav-item nav-link" href="#donativos-container"
-                >Donativos</a
-              >
+
               <a class="nav-item nav-link" href="#ubicacion">Ubicación</a>
               <a class="nav-item nav-link" href="#contacto">Contacto</a>
             </div>
@@ -132,29 +130,7 @@
         </div>
       </div>
       <!-- /Eventos -->
-      <!-- Donativos -->
-      <div
-        id="donativos-container"
-        class="container-fluid d-flex section justify-content-center flex-column py-5"
-      >
-        <div
-          id="donativos"
-          class="section-title row no-gutters justify-content-center"
-        >
-          <h1 class="col-7 col-sm-4 d-flex justify-content-center">
-            Donativos
-          </h1>
-        </div>
-        <div class="container justify-content-center">
-          <p
-            class="row mr-auto ml-auto paragraph d-flex justify-content-center"
-          >
-            Número de cuenta: xxxxxxxxxxxxxxxxx<br />
-            Clave interbancaria: xxxxxxxxxxxxxxxxx<br />Banco: xxxxxxxxxxxx
-          </p>
-        </div>
-      </div>
-      <!-- /Donativos -->
+
       <!-- Ubicacion -->
       <div
         id="ubicacion"
@@ -202,6 +178,8 @@
         >
           <form
             id="form-container"
+            name="contact"
+            method="POST"
             data-netlify="true"
             data-netlify-recaptcha="true"
           >
@@ -209,6 +187,7 @@
               <label for="formGroupExampleInput">Nombre:</label>
               <input
                 type="text"
+                name="name"
                 class="form-control"
                 id="formGroupExampleInput"
                 placeholder=""
@@ -217,7 +196,8 @@
             <div class="form-group">
               <label for="formGroupExampleInput2">Correo electrónico:</label>
               <input
-                type="text"
+                type="email"
+                name="email"
                 class="form-control"
                 id="formGroupExampleInput2"
                 placeholder=""
@@ -226,7 +206,8 @@
             <div class="form-group">
               <label for="formGroupExampleInput2">Teléfono:</label>
               <input
-                type="text"
+                type="tel"
+                name="phone"
                 class="form-control"
                 id="formGroupExampleInput2"
                 placeholder=""
@@ -236,6 +217,7 @@
               <label for="exampleFormControlTextarea1">Mensaje:</label>
               <textarea
                 class="form-control"
+                name="message"
                 id="exampleFormControlTextarea1"
                 rows="5"
               ></textarea>
